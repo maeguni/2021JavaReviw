@@ -7,6 +7,4 @@ public class Subject {
    int score;
    int subjectId;
 
-
-
 }
