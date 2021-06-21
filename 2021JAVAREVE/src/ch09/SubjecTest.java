@@ -15,7 +15,6 @@ public class SubjecTest {
 		
 		studentLee.showScore();
 		studentKim.showScore();
-		
 	}
 	
 }
