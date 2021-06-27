@@ -3,11 +3,11 @@ package ch16;
 public class Employee {
 	
 	
-	public static int serialNum = 1000;
+	private static int serialNum = 1000;
 	
 	
 	private int employeeId;
-	private String employeeNamel;
+	private String employeeName;
 	private String department;
 	
 	
@@ -19,19 +19,28 @@ public class Employee {
 	}
 	
 	
-	
-	
+	public static int getSerialNum() {
+		
+		//int i = 0;
+		
+		//employeeName ="Lee";
+		
+		return serialNum;
+	}
+
 	public int getEmployeeId() {
+		serialNum =1000;
+		
 		return employeeId;
 	}
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
 	public String getEmployeeNamel() {
-		return employeeNamel;
+		return employeeName;
 	}
 	public void setEmployeeNamel(String employeeNamel) {
-		this.employeeNamel = employeeNamel;
+		this.employeeName = employeeNamel;
 	}
 	public String getDepartment() {
 		return department;

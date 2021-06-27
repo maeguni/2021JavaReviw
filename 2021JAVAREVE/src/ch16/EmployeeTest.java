@@ -9,7 +9,7 @@ public class EmployeeTest {
 		Employee employlee = new Employee();
 		employlee.setEmployeeNamel("이순신");
 		
-		System.out.println(Employee.serialNum);
+		System.out.println(Employee.getSerialNum());
 		
 		Employee employeeKim = new Employee();
 		employeeKim.setEmployeeNamel("김유신");
