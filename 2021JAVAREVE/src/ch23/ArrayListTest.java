@@ -21,7 +21,6 @@ public class ArrayListTest {
 			
 			library.get(i).showInfo();
 		}
-		
 	}
 
 }
