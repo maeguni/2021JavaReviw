@@ -17,8 +17,6 @@ public class ArrayListTest {
 		library.add(new Book("태백산맥4","조정래"));
 		library.add(new Book("태백산맥5","조정래"));
 		
-		
-		
 		for(int i =0; i<library.size(); i++) {
 			
 			library.get(i).showInfo();
