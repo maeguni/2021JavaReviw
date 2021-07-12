@@ -1,11 +1,18 @@
 package ch3_6;
 
+import java.util.ArrayList;
 
 class Animal{
 	
 	public void move() {
 		
 		System.out.println("동물이 움직입니다.");
+		
+	}
+	
+	//상위에서 선언하면 하위에서 이용할수있음
+	public void eating() {
+		
 		
 	}
 }
@@ -60,16 +67,25 @@ public class AnimalTest {
 	    Animal tanimal = new Tiger();
 	    Animal eanimal = new Eagle();
 	    
-	    AnimalTest test = new AnimalTest();
-	    test.moveAnimal(hanimal);
-	    test.moveAnimal(tanimal);
-	    test.moveAnimal(eanimal);
+	    //AnimalTest test = new AnimalTest();
+	    //test.moveAnimal(hanimal);
+	    //test.moveAnimal(tanimal);
+	    //test.moveAnimal(eanimal);
+	    
+	    ArrayList<Animal> animalList = new ArrayList<>();
+	    
+	    animalList.add(hanimal);
+	    animalList.add(tanimal);
+	    animalList.add(eanimal);
+	    
+	    for(Animal animal : animalList) {
+	    	animal.move();
+	    }
+	    
 	}
 	
 	public void moveAnimal(Animal animal) {
 		animal.move();
-		
-		
 		
 	}
 	
