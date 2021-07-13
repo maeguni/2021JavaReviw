@@ -38,7 +38,6 @@ public class VIPCustomer extends Customer{
 		return price;
 	}
 
-
 	public String getAStringID() {
 		return agentID;
 		

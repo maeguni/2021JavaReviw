@@ -11,7 +11,6 @@ public class GoldCustommer extends Customer {
 		customerGrade = "Gold";
 	}
 	
-	
 	public int calcPrice(int price) {
 		
 		bonusPoint += price * bonusRatio;
