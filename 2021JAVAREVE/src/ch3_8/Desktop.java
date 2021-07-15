@@ -1,8 +1,7 @@
 package ch3_8;
 
-public abstract class Desktop extends Computer {
+public  class Desktop extends Computer {
 
-	
 	
 	@Override
 	public void display() {
