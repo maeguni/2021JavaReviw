@@ -4,6 +4,7 @@ public abstract class Car {
 	
 	public abstract void drive();
 	public abstract void stop();
+	public abstract void wiper();
 	
 	
 	public void startCar() {
@@ -14,6 +15,19 @@ public abstract class Car {
 	public void trunOff() {
 		System.out.println("시동을 끕니다.");
 		
+	}
+	//hook 메서트라고 함
+	public void washCar() {}
+	
+	
+	final public void run() {
+		
+		startCar();
+		drive();
+		wiper();
+		stop();
+		trunOff();
+		washCar();
 	}
 	
 
