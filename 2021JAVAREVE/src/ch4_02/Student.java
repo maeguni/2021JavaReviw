@@ -1,12 +1,18 @@
 package ch4_02;
 
-public class Student {
+public class Student implements Cloneable {
 	private int studentNum;
 	private String studentName;
 	
 	public Student(int studentNum,String studentName ) {
 		this.studentNum = studentNum;
 		this.studentName = studentName;
+		
+		
+	}
+	
+	public void setStudentName(String name) {
+		this.studentName = name;
 		
 		
 	}
@@ -17,7 +23,7 @@ public class Student {
 	}
 	@Override
 	public int hashCode() {
-		
+		 
 		return studentNum;
 	}
 	
@@ -35,6 +41,11 @@ public class Student {
 		}
 			return false;
 	
+	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
 	}
 	
 	
