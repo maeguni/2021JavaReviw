@@ -4,12 +4,11 @@ public class TextBlockTest {
 
 	public static void main(String[] args) {
 
-		String textBlocks = """
-				Hello,
-				hi,
-				how r u """;
-		
-		System.out.println(textBlocks);
+		/* java 13부터 지원
+		 * String textBlocks = """ Hello, hi, how r u """;
+		 * 
+		 * System.out.println(textBlocks);
+		 */
 
 	}
 
